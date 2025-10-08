@@ -1,13 +1,7 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-export default function Team() {
-  const teamMembers = Array.from({ length: 16 }, (_, i) => ({
-    id: i + 1,
-    name: "Insert Name",
-    role: "Director",
-  }));
-
+export default function Index() {
   return (
     <div className="min-h-screen bg-black relative overflow-hidden">
       <Navigation />
@@ -59,7 +53,7 @@ export default function Team() {
                 <feComposite in2="hardAlpha" operator="out" />
                 <feColorMatrix
                   type="matrix"
-                  values="0 0 0 0 0.512856 0 0 0 0 0.251942 0 0 0 0 0.524038 0 0 0 1 0"
+                  values="0 0 0 0 0.196078 0 0 0 0 0.121569 0 0 0 0 0.890196 0 0 0 1 0"
                 />
                 <feBlend
                   mode="normal"
@@ -77,7 +71,7 @@ export default function Team() {
                 <feComposite in2="hardAlpha" operator="out" />
                 <feColorMatrix
                   type="matrix"
-                  values="0 0 0 0 0.774499 0 0 0 0 0 0 0 0 0 0.807692 0 0 0 1 0"
+                  values="0 0 0 0 0.344412 0 0 0 0 0.274038 0 0 0 0 1 0 0 0 1 0"
                 />
                 <feBlend
                   mode="normal"
@@ -106,7 +100,7 @@ export default function Team() {
                 />
                 <feColorMatrix
                   type="matrix"
-                  values="0 0 0 0 0.626976 0 0 0 0 0 0 0 0 0 0.653846 0 0 0 1 0"
+                  values="0 0 0 0 0.216667 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0"
                 />
                 <feBlend
                   mode="normal"
@@ -131,27 +125,80 @@ export default function Team() {
         <div className="relative container mx-auto px-4 sm:px-8 lg:px-16 pt-32 lg:pt-40 pb-20">
           <div className="text-center mb-12 lg:mb-20">
             <h1 className="font-unbounded text-5xl sm:text-6xl lg:text-8xl xl:text-[96px] font-bold mb-6 lg:mb-8 bg-gradient-to-r from-white/20 via-white via-white to-white/20 bg-clip-text text-transparent leading-tight">
-              Our Team
+              Sponsors
             </h1>
+            <p className="text-white text-lg sm:text-xl lg:text-2xl font-medium max-w-3xl mx-auto leading-relaxed">
+              Here are our wonderful sponsors that make our event happen!
+            </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto">
-            {teamMembers.map((member) => (
-              <div
-                key={member.id}
-                className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-6 flex flex-col items-center hover:bg-white/10 transition-all duration-300"
-              >
-                <div className="w-32 h-32 rounded-2xl bg-gradient-to-br from-white/10 to-white/5 mb-4 flex items-center justify-center">
-                  <div className="w-full h-full rounded-2xl bg-white/20" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <div className="flex items-center gap-4">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-full overflow-hidden flex-shrink-0">
+                  <img
+                    src="https://api.builder.io/api/v1/image/assets/TEMP/9b81ce718e794d8295b590fe72e3aa6477bff2af?width=122"
+                    alt="CodeCrafters Logo"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
-                <h3 className="text-white text-lg font-dm-sans font-medium text-center">
-                  {member.name}
-                </h3>
-                <p className="text-white/70 text-sm font-dm-sans text-center mt-1">
-                  {member.role}
-                </p>
+                <img
+                  src="https://api.builder.io/api/v1/image/assets/TEMP/a0ae04349c47559dd11f711cc9187232d855bab1?width=356"
+                  alt="CodeCrafters"
+                  className="h-10 lg:h-12 w-auto object-contain"
+                />
               </div>
-            ))}
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/b3b9ed67d1a196cc2fc8888a307f2c20e1099d4a?width=400"
+                alt="Desmos"
+                className="h-10 lg:h-12 w-auto object-contain"
+              />
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/9c2384f6ed6e797e96a6b03dd92aaacc85da3b41?width=456"
+                alt="Liner"
+                className="h-12 lg:h-16 w-auto object-contain"
+              />
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/41ee0ec880d5b7ec95d4462075455340b2f7b625?width=207"
+                alt="CS Tutoring"
+                className="h-24 lg:h-28 w-auto object-contain"
+              />
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <div className="w-full h-full flex items-center justify-center">
+                <img
+                  src="/assets/image.png"
+                  alt="UC Davis CS"
+                  className="h-24 lg:h-28 w-auto object-contain"
+                />
+              </div>
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160]">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/ebe0d3b4353c6b3bc02d916dd9121f4c8e26fb73?width=365"
+                alt="Finance Council"
+                className="h-20 lg:h-24 w-auto object-contain"
+              />
+            </div>
+
+            <div className="group relative rounded-2xl border border-white/20 bg-white/5 backdrop-blur-sm p-8 lg:p-12 flex items-center justify-center hover:bg-white/10 transition-all duration-300 aspect-[310/160] md:col-span-2 lg:col-span-1 lg:col-start-2">
+              <img
+                src="https://api.builder.io/api/v1/image/assets/TEMP/d5179bdaa8af433bfdd63f38348228018aadde22?width=226"
+                alt="ASUCD"
+                className="h-20 lg:h-24 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
       </div>

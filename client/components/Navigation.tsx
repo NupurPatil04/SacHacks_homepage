@@ -23,7 +23,7 @@ export default function Navigation() {
           <Link to="/" className="hover:opacity-80 transition-opacity">Home</Link>
           <a href="#about" className="hover:opacity-80 transition-opacity">About</a>
           <Link to="/team" className="hover:opacity-80 transition-opacity">Team</Link>
-          <a href="#sponsors" className="hover:opacity-80 transition-opacity">Sponsors</a>
+          <Link to="/sponsors" className="hover:opacity-80 transition-opacity">Sponsors</Link>
           <a href="#faq" className="hover:opacity-80 transition-opacity">FAQ</a>
         </div>
       </div>
